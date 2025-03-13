@@ -2,7 +2,7 @@
 body {
   max-width: 450px;
   margin: 5px;
-  padding: 5px;
+  padding: 1rem;
   background-image: url(../img/sfondo.png);
   margin-inline: auto;
 }
@@ -10,7 +10,7 @@ main {
   background-color: white;
 }
 main p {
-  padding: 5px;
+  padding: 3px;
 }
 
 p,
@@ -19,22 +19,26 @@ ol {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
+  line-height: normal;
 }
 
-ul,
-ol {
+ul {
   padding-left: 40px;
   list-style-type: disc;
 }
 
 ol {
   margin-bottom: 20px;
+  padding-left: 40px;
+  list-style-type: decimal;
 }
 
 header {
-  margin-top: 20px;
   text-align: center;
-  background-color: #367d9a;
+  background: rgb(0, 163, 203);
+  background: linear-gradient(0deg, rgba(0, 163, 203, 1) 0%, rgba(0, 115, 136, 1) 100%);
+  padding-top: 30px;
 }
 header img {
   width: 300px;
@@ -67,16 +71,19 @@ h4 {
 
 .info {
   margin: 5px;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: grey;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 19px;
+  font-size: xx-large;
 }
 
 main ul li span {
-  background-color: rgb(237, 231, 231);
+  display: inline-block;
+  background-color: rgb(224, 221, 221);
+  border-radius: 10px;
 }
 .Formattazione {
   margin-left: 5px;
@@ -96,9 +103,17 @@ table {
 th {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 5px;
   width: 33.33%;
+  font-weight: 100;
   background-color: blue;
   color: white;
+}
+
+caption {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 table,
@@ -110,18 +125,22 @@ td {
   background-color: rgba(167, 165, 165, 0.318);
 }
 
+.applicazione {
+  margin: 9px;
+}
+
 td {
   padding-top: 8px;
   padding-bottom: 8px;
+  height: 50px;
 }
 
 iframe {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 10px;
-  max-width: 98%;
-  max-height: 300px;
+  margin-left: 15px;
+  max-width: 90%;
+  max-height: 200px;
   border-radius: 30px;
 }
 
@@ -134,22 +153,72 @@ a {
 
 h4 {
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   text-align: center;
-}
-.correlati {
-  margin: 15px;
-  background-color: rgb(207, 199, 199);
-  padding-left: 10px;
 }
 
+.correlati {
+  background-color: rgb(225, 222, 222);
+}
+.correlati a p {
+  margin: 15px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+tr {
+  padding-right: 5px;
+  font-size: 26px;
+  vertical-align: bottom;
+}
 .nuovo {
-  background-color: rgb(207, 199, 199);
+  background-color: rgb(225, 222, 222);
+  margin-top: 40px;
   padding-bottom: 20px;
   margin-right: 20px;
+  margin-left: 15px;
+}
+
+.nuovo p {
+  font-size: 20px;
+}
+
+.input {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.categoria {
+  font-size: 16px;
+  margin-left: 23px;
+}
+
+.data {
+  padding-top: 20px;
+  text-align: end;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+button {
+  background-color: blue;
+  border-color: blue;
+  color: white;
 }
 footer {
+  color: white;
   margin-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px;
   text-align: center;
-  background-color: #255568;
+  background: rgb(36, 64, 65);
+  background: linear-gradient(0deg, rgba(36, 64, 65, 1) 0%, rgba(0, 85, 102, 1) 100%);
+}
+footer p {
+  padding-bottom: 20px;
+}
+.email {
+  color: purple;
 }
